@@ -29,7 +29,7 @@ async def chat(req: Request):
         return {"error": f"Internal server error: {str(e)}"}'''
 from fastapi import FastAPI, Request
 from fastapi.middleware.cors import CORSMiddleware
-from backend.agent import calendar_agent
+from agent import calendar_agent
 
 app = FastAPI()
 app.add_middleware(CORSMiddleware, allow_origins=["*"], allow_methods=["*"], allow_headers=["*"])
