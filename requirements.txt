@@ -1,0 +1,10 @@
+streamlit
+requests
+langgraph
+langchain
+transformers
+torch
+pydantic
+fastapi
+uvicorn
+
