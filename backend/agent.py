@@ -13,7 +13,7 @@ class AgentState(TypedDict):
     output: str
 
 
-qa_pipeline = pipeline("text-generation", model="gpt2")
+qa_pipeline = pipeline("text-generation", model="sshleifer/tiny-gpt2")
 
 
 @tool
