@@ -71,5 +71,5 @@ graph.add_conditional_edges("llm", route_tool, {
 })
 graph.add_edge("booking", END)
 
-# Export the executable graph
+
 calendar_agent = graph.compile()
