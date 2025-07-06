@@ -21,7 +21,7 @@ if user_input:
 
     with st.chat_message("assistant"):
         print("Sending to backend:", {"message": user_input})
-        res = requests.post("http://127.0.0.1:8000/chat", json={"message": user_input})
+        res = requests.post("https://calendar-xut2.onrender.com", json={"message": user_input})
         print("📤 Sent to backend:", {"message": user_input})
         bot_reply = res.json().get("response", "Something went wrong.")
         st.markdown(bot_reply)
